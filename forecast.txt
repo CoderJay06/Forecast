@@ -1,0 +1,4 @@
+Forecast Results File:
+ Temperature: 55.0F
+ Sky condition: clear
+ Chance of rain: 1
