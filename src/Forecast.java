@@ -91,6 +91,7 @@ public class Forecast {
     }
 
     public void forecastWeatherOptions() {
+        System.out.println("(Type 0 to exit at anytime)");
         System.out.println("1. Convert Fahrenheit to Celcius");
         System.out.println("2. Convert Celcius to Fahrenheit");
         System.out.println("3. Convert Fahrenheit to Kelvin");

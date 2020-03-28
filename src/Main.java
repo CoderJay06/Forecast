@@ -69,6 +69,9 @@ public class Main {
 
     }
 
+    private static Forecast forecast = new Forecast();
+    private static Scanner scanner = new Scanner(System.in);
+
     private static void forecastAppGreeting() {
         System.out.println("------------------------------------");
         System.out.println("Welcome to The Weather Forecast App!");
@@ -78,34 +81,25 @@ public class Main {
                 "'3' to print forecast to a file");
     }
 
-
     private static void forecastEnterTemperature() {
-        Forecast forecast = new Forecast();
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a temperature: ");
         forecast.setTemp(scanner.nextFloat());
         System.out.println("You entered: " + forecast.getTemperature() + "F");
     }
 
     private static void forecastEnterSkyCondition() {
-        Forecast forecast = new Forecast();
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter sky condition: ");
         forecast.setSkyCondition(scanner.nextLine());
         System.out.println("You entered: " + forecast.getSkyCondition());
     }
 
     private static void forecastEnterChanceOfRain() {
-        Forecast forecast = new Forecast();
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter chance of rain: ");
         forecast.setChanceOfRain(scanner.nextInt());
         System.out.println("You entered: " + forecast.getChanceOfRain());
     }
 
     private static void setAllOfForecast() {
-        Forecast forecast = new Forecast();
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter temperature: ");
         double inputTemp = scanner.nextFloat();
         System.out.println("Enter sky condition: ");
@@ -120,8 +114,6 @@ public class Main {
     }
 
     private static void conversionOptionFahrenheitToCelsius() {
-        Forecast forecast = new Forecast();
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a decimal number to convert: ");
         double convertInput = scanner.nextFloat();
         double newTemp = forecast.convertFahrenheitToCelcius(convertInput);
@@ -130,8 +122,6 @@ public class Main {
     }
 
     private static void conversionOptionCelsiusToFahrenheit() {
-        Forecast forecast = new Forecast();
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a decimal number to convert: ");
         double convertInput = scanner.nextFloat();
         double newTemp = forecast.convertCelsiusToFahrenheit(convertInput);
@@ -140,8 +130,6 @@ public class Main {
     }
 
     private static void conversionOptionFahrenheitToKelvin() {
-        Forecast forecast = new Forecast();
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a decimal number to convert: ");
         double convertInput = scanner.nextFloat();
         double newTemp = forecast.convertFahrenheitToKelvin(convertInput);
@@ -150,8 +138,6 @@ public class Main {
     }
 
     private static void conversionOptionKelvinToFahrenheit() {
-        Forecast forecast = new Forecast();
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a decimal number to convert: ");
         double convertInput = scanner.nextFloat();
         double newTemp = forecast.convertKelvinToFahrenheit(convertInput);
@@ -160,8 +146,6 @@ public class Main {
     }
 
     private static void printForecastToFileOption() {
-        Forecast forecast = new Forecast();
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter temperature: ");
         double inputTemp = scanner.nextFloat();
         System.out.println("Enter sky condition: ");
